@@ -11,7 +11,6 @@
 
 /* 
 * By the grace of the Lord
-* Write your own code. You can do it better than me!
 */
 
 #include "euclid.h"
