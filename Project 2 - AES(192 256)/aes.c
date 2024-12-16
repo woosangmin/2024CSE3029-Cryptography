@@ -3,16 +3,9 @@
  * 이 프로그램은 한양대학교 ERICA 컴퓨터학부 학생을 위한 교육용으로 제작되었다.
  * 한양대학교 ERICA 학생이 아닌 자는 이 프로그램을 수정하거나 배포할 수 없다.
  * 프로그램을 수정할 경우 날짜, 학과, 학번, 이름, 수정 내용을 기록한다.
- * 날짜 : 20240916 / 학과 : 컴퓨터학부 / 이름 : 우상민 
- * 수정 내용
- *   - 20240916 / KeyExpansion(RotWord, SubWord 포함), AddRounKey, SubBytes, ShiftRows, MixColumns(gf8_mul), Cipher 함수 작성(주석 포함)
- *   - 20240927 / AddRoundKey 함수 : n_state 변수를 생성할 때 Nk가 아닌 Nb를 참조하도록 수정, Cipher|KeyExpansion 함수(키의 길이를 인자로 받아오도록 수정)
- *
  */
 
-/* 
-* By the grace of the Lord
-*/
+/* By the grace of the Lord */
 
 #include "aes.h"
 #include <endian.h>

@@ -4,18 +4,19 @@
  * 한양대학교 ERICA 학생이 아닌 자는 이 프로그램을 수정하거나 배포할 수 없다.
  * 프로그램을 수정할 경우 날짜, 학과, 학번, 이름, 수정 내용을 기록한다.
  */
-
-#ifndef _EUCLID_H_
-#define _EUCLID_H_
+#ifndef _MILLER_RABIN_H_
+#define _MILLER_RABIN_H_
 
 #include <stdint.h>
 
-int gcd(int a, int b);
-int xgcd(int a, int b, int *x, int *y);
-int mul_inv(int a, int m);
-uint64_t umul_inv(uint64_t a, uint64_t m);
-uint16_t gf16_mul(uint16_t a, uint16_t b);
-uint16_t gf16_pow(uint16_t a, uint16_t b);
-uint16_t gf16_inv(uint16_t a);
+#define BASELEN 12
+#define PRIME 1
+#define COMPOSITE 0
+
+uint64_t mod_add(uint64_t a, uint64_t b, uint64_t m);
+uint64_t mod_sub(uint64_t a, uint64_t b, uint64_t m);
+uint64_t mod_mul(uint64_t a, uint64_t b, uint64_t m);
+uint64_t mod_pow(uint64_t a, uint64_t b, uint64_t m);
+int miller_rabin(uint64_t n);
 
 #endif
